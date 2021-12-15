@@ -7,10 +7,7 @@ published: true
 # crontab编写格式
 
 > 作者：十二楼中月
-> 链接：https://www.jianshu.com/p/f7e052e5c58a
-> 来源：简书
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
+>> 链接：https://www.jianshu.com/p/f7e052e5c58a
 ```
 *　　*　　*　　*　　*　　command
 前面的五个星号分别代表：M分 H时 D天 m月 d星期
