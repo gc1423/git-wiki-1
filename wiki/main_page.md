@@ -4,6 +4,23 @@ published: true
 ---
 自建wiki， 整理并记录一些工作学习中遇到的知识点
 
+# crontab编写格式
+
+> 作者：十二楼中月
+> 链接：https://www.jianshu.com/p/f7e052e5c58a
+> 来源：简书
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+```
+*　　*　　*　　*　　*　　command
+前面的五个星号分别代表：M分 H时 D天 m月 d星期
+M: 分钟（0-59）。
+H：小时（0-23）。
+D：天（1-31）。
+m: 月（1-12）。
+d: 一星期内的天（0~6，0为星期天）。
+```
+
 # awk split函数的使用方法
 > The awk function split(s,a,sep) splits a string s into an awk array a using the delimiter sep
 
