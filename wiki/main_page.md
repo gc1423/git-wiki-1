@@ -4,6 +4,15 @@ published: true
 ---
 自建wiki， 整理并记录一些工作学习中遇到的知识点
 
+# awk split函数的使用方法
+> The awk function split(s,a,sep) splits a string s into an awk array a using the delimiter sep
+
+```
+set time = 12:34:56
+set hr = `echo $time | awk '{split($0,a,":" ); print a[1]}'` # = 12
+set sec = `echo $time | awk '{split($0,a,":" ); print a[3]}'` # = 56
+```
+
 # mysql中各个字段类型在jdbc中对应编号
 
 > 解析canal-kafka的json格式时遇到， kafka的消息中sqlTypes字段以编号的形式标注了字段类型
