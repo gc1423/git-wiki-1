@@ -4,6 +4,16 @@ published: true
 ---
 自建wiki， 整理并记录一些工作学习中遇到的知识点
 
+# curl命令重定向问题
+```
+curl -H "Content-Type:application/json" -X POST -d '{"token": "a1c73241d5d0e86d4aa20c2e6276bda8","timestamp": 1639376219,  "tp": 3,   "id": 12345}' http://api.baike.sogou.com/sg/push/tianyancha
+
+```
+添加-L参数允许curl重定向
+```
+curl -L -H "Content-Type:application/json" -X POST -d '{"token": "a1c73241d5d0e86d4aa20c2e6276bda8","timestamp": 1639376219,  "tp": 3,   "id": 12345}' http://api.baike.sogou.com/sg/push/tianyancha
+```
+
 # crontab编写格式
 
 > 作者：十二楼中月
