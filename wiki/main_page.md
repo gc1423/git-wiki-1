@@ -4,6 +4,34 @@ published: true
 ---
 自建wiki， 整理并记录一些工作学习中遇到的知识点
 
+
+# docker overlay2 清理
+> 背景：公司服务器上磁盘报警， 排查发现是 /var/lib/docker/overlay2 文件夹占用磁盘过多
+>> 查询相关发现： overlay2 是docker使用的一种文件存储驱动， 不能随便删除， 可用 docker system prune 命令清理不用的数据文件
+
+>> 来源: https://stackoverflow.com/questions/46672001/is-it-safe-to-clean-docker-overlay2
+
+Docker uses /var/lib/docker to store your images, containers, and local named volumes. Deleting this can result in data loss and possibly stop the engine from running. The overlay2 subdirectory specifically contains the various filesystem layers for images and containers.
+
+To cleanup unused containers and images, see docker system prune. There are also options to remove volumes and even tagged images, but they aren't enabled by default due to the possibility of data loss:
+```bash
+$ docker system prune --help
+
+Usage:  docker system prune [OPTIONS]
+
+Remove unused data
+
+Options:
+  -a, --all             Remove all unused images not just dangling ones
+      --filter filter   Provide filter values (e.g. 'label=<key>=<value>')
+  -f, --force           Do not prompt for confirmation
+      --volumes         Prune volumes
+```
+What a prune will never delete includes:
+- running containers (list them with docker ps)
+- logs on those containers (see this post for details on limiting the size of logs)
+- filesystem changes made by those containers (visible with docker diff)
+
 # http 302重定向问题
 
 >302状态码 临时重定向, 浏览器处理方式如下
