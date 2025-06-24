@@ -6,7 +6,10 @@ published: true
 
 # 有用网址收集
 
-- [Awesome Mac](https://wangchujiang.com/awesome-mac/index.html)
+- [Mac工具集锦](https://wangchujiang.com/awesome-mac/index.html)
+- [开发者常用工具集锦](https://github.com/agamm/awesome-developer-first)
+- [开发者直播列表](https://github.com/bnb/awesome-developer-streams)
+- [DevOps常用工具](https://github.com/wmariuss/awesome-devops)
 
 # 基础知识补完计划
 
