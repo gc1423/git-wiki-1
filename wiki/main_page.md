@@ -4,6 +4,10 @@ published: true
 ---
 自建wiki， 整理并记录一些工作学习中遇到的知识点
 
+# 有用网址收集
+
+- [Awesome Mac](https://wangchujiang.com/awesome-mac/index.html)
+
 # 基础知识补完计划
 
 - [redis基本知识](https://gc1423.github.io/git-wiki-1/2022-06-26-redis)
