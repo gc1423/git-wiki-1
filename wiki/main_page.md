@@ -14,7 +14,9 @@ published: true
 # 基础知识补完计划
 
 - [redis基本知识](https://gc1423.github.io/git-wiki-1/2022-06-26-redis)
-
+- [安卓逆向]
+-   https://github.com/frida/frida/issues/2516  spawn失败的问题usap
+-   
 
 # docker overlay2 清理
 > 背景：公司服务器上磁盘报警， 排查发现是 /var/lib/docker/overlay2 文件夹占用磁盘过多
